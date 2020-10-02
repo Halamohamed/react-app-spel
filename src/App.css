@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: rgb(100, 52, 197);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(86, 186, 233);
+}
+.startGame {
+  background-color: rgb(57, 17, 94);
+  color: aquamarine;
+  box-sizing: initial;
+  width: 10ex;
+  height: 10ex;
+}
+
