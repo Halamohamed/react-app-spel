@@ -15,7 +15,7 @@ const Play = () => {
   let randomNo = Math.floor(Math.random() * 3);
   const noLimitRef = React.createRef();
 
-
+// startplay: start the game and call function to control the the winner
     const startPlay = (e) => { 
     e.preventDefault();
     let playerchoice = e.target.value;
@@ -31,7 +31,7 @@ const Play = () => {
     }
 
     
-
+// control if the two player have the same choice
     let getPoints = (p1,p2) => {
          if(((p1 === choices[0]) && (p2 === choices[1])) ||
          ((p1 === choices[1]) && (p2 === choices[2])) ||
@@ -44,16 +44,14 @@ const Play = () => {
          console.log("player point "+playerpoint);
 
     }
-
-
-    console.log(playerpoint + " " + computerPoint);
+// set the limit to play a round 
     var setNumberLimit =(event) => {
         event.preventDefault();
         const inputNoLimit = noLimitRef.current.value;
         setCounter(inputNoLimit);
     }
         
-
+// monitor the winner
     const getwinner = (p1,p2) => {
         if(p1 > p2){
             return "du vann";

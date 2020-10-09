@@ -15,7 +15,7 @@ function Game() {
   const [time, setTime] = useState((new Date().getSeconds())); 
   let endTime;
    
-
+//render the play component and get the time
 return (
   <div className="App">   
     <h2>VÄLKOMMEN TILL SPELET</h2>
